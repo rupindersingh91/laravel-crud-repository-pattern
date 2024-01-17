@@ -1,10 +1,9 @@
-Laravel CRUD using repository pattern
+## Laravel CRUD using repository pattern
 
 ## Prerequisites
 
 PHP >= 7.3
 Composer
-Node.js & npm (for frontend assets)
 
 ## Getting Started
 
