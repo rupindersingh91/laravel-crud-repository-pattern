@@ -4,6 +4,7 @@
 
 @section('content')
 <div class="container">
+    <a href="{{ route('posts.index') }}" class="btn btn-primary mb-3 mt-2">All Post</a>
     <h2>Create a New Post</h2>
     <form action="{{ route('posts.store') }}" method="POST" class="mb-3">
         @csrf
