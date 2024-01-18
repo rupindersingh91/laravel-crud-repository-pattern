@@ -18,7 +18,6 @@ cd your-project
 
 ```
 composer install
-npm install
 ```
 
 3. Configure Environment
