@@ -3,19 +3,24 @@
 @extends('layouts.app')
 
 @section('content')
-<h2>Edit Post</h2>
-<form action="{{ route('posts.update', $post->id) }}" method="POST">
-    @csrf
-    @method('PUT')
-    <label for="title">Title:</label>
-    <input type="text" name="title" value="{{ $post->title }}" required>
+<div class="container mt-4">
+    <h2 class="mb-3">Edit Post</h2>
 
-    <br>
+    <form action="{{ route('posts.update', $post->id) }}" method="POST">
+        @csrf
+        @method('PUT')
 
-    <label for="content">Content:</label>
-    <textarea name="content" rows="4" required>{{ $post->content }}</textarea>
-    <br>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title:</label>
+            <input type="text" class="form-control" id="title" name="title" value="{{ $post->title }}" required>
+        </div>
 
-    <button type="submit">Update Post</button>
-</form>
+        <div class="mb-3">
+            <label for="content" class="form-label">Content:</label>
+            <textarea class="form-control" id="content" name="content" rows="4" required>{{ $post->content }}</textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update Post</button>
+    </form>
+</div>
 @endsection
