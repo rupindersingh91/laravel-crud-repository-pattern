@@ -10,7 +10,7 @@ Composer
 1. Clone the Repository
 
 ```
-git clone https://github.com/your-username/your-project.git
+git clone https://github.com/rupindersingh91/laravel-crud-repository-pattern.git
 cd your-project 
 ```
 
